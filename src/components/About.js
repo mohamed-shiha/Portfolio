@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaUserTie, FaGamepad, FaCode } from 'react-icons/fa';
+import { FaUserTie, FaGamepad, FaCode, FaDownload } from 'react-icons/fa';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 function About() {
@@ -50,21 +50,30 @@ function About() {
               and independent projects, I thrive on tackling complex technical challenges and am constantly exploring new technologies to 
               enhance user experiences.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-6">
               <motion.div 
                 className="flex items-center"
                 whileHover={{ scale: 1.05 }}
               >
                 <FaGamepad className="text-2xl text-blue-600 mr-2" />
-                <span>Game Development</span>
+                <span className="dark:text-gray-300">Game Development</span>
               </motion.div>
               <motion.div 
                 className="flex items-center"
                 whileHover={{ scale: 1.05 }}
               >
                 <FaCode className="text-2xl text-blue-600 mr-2" />
-                <span>Software Engineering</span>
+                <span className="dark:text-gray-300">Software Engineering</span>
               </motion.div>
+              <motion.a
+                href="/Portfolio/assets/docs/cv.pdf"
+                download="Mohamed_Shiha_CV.pdf"
+                className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                whileHover={{ scale: 1.05 }}
+              >
+                <FaDownload className="mr-2" />
+                Download CV
+              </motion.a>
             </div>
           </motion.div>
         </div>
