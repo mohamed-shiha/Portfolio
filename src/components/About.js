@@ -66,8 +66,8 @@ function About() {
                 <span className="dark:text-gray-300">Software Engineering</span>
               </motion.div>
               <motion.a
-                href="/Portfolio/assets/docs/cv.pdf"
-                download="Mohamed_Shiha_CV.pdf"
+                href="/Portfolio/assets/docs/cv.docx"
+                download="Mohamed_Shiha_CV.docx"
                 className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
               >
