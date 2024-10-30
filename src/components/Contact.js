@@ -2,15 +2,15 @@ import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-dark-card">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+        <h2 className="text-3xl font-bold mb-8 dark:text-white">Get in Touch</h2>
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
               <FaEnvelope className="text-2xl text-blue-600 mr-3" />
-              <div>
-                <strong>Email:</strong>
+              <div className="dark:text-gray-300">
+                <strong className="dark:text-white">Email:</strong>
                 <a 
                   href="mailto:mohamedshiha89@gmail.com" 
                   className="text-blue-600 hover:underline ml-2"
@@ -22,8 +22,8 @@ function Contact() {
             
             <div className="flex items-center">
               <FaLinkedin className="text-2xl text-blue-600 mr-3" />
-              <div>
-                <strong>LinkedIn:</strong>
+              <div className="dark:text-gray-300">
+                <strong className="dark:text-white">LinkedIn:</strong>
                 <a 
                   href="https://www.linkedin.com/in/mohamed-shiha/" 
                   className="text-blue-600 hover:underline ml-2"

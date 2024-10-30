@@ -24,9 +24,9 @@ function SkillBar({ skill, index }) {
     >
       <div className="flex items-center mb-2">
         <div className="text-2xl text-blue-600 mr-3">{skill.icon}</div>
-        <span className="font-semibold">{skill.name}</span>
+        <span className="font-semibold dark:text-white">{skill.name}</span>
       </div>
-      <div className="h-3 bg-gray-200 rounded-full">
+      <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full">
         <motion.div 
           className="h-full bg-blue-600 rounded-full"
           initial={{ width: 0 }}

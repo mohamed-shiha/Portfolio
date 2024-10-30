@@ -18,7 +18,7 @@ const professionalProjects = [
   },
   {
     title: "Goner",
-    description: "Implemented AI systems",
+    description: "Implemented AI systems. Game is currently in development and not yet available to the public.",
     icon: <FaGamepad className="text-2xl text-blue-600" />
   }
 ];
@@ -80,7 +80,7 @@ function ProjectCard({ project, isPersonal }) {
           scale: 1.05,
           boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
         }}
-        className="bg-gray-50 p-6 rounded-lg shadow-md transition-all duration-300"
+        className="bg-gray-50 dark:bg-dark-card p-6 rounded-lg shadow-md transition-all duration-300"
       >
         {project.image && (
           <div 
@@ -97,13 +97,13 @@ function ProjectCard({ project, isPersonal }) {
         )}
         <div className="flex items-center mb-4">
           {project.icon}
-          <h4 className="text-xl font-bold ml-3">{project.title}</h4>
+          <h4 className="text-xl font-bold ml-3 dark:text-white">{project.title}</h4>
         </div>
-        <p>{project.description}</p>
+        <p className="dark:text-gray-300">{project.description}</p>
         {isPersonal && (
           <a 
             href={project.link} 
-            className="text-blue-600 hover:text-blue-800 flex items-center mt-4"
+            className="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 flex items-center mt-4"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -147,7 +147,10 @@ function Projects() {
       className="py-16 bg-gray-50 dark:bg-dark-bg"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-12">
+          Note: Due to Non-Disclosure Agreements (NDAs), several major gaming projects I've contributed to cannot be listed here.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {professionalProjects.map((project, index) => (
             <ProjectCard key={index} project={project} isPersonal={false} />

@@ -28,11 +28,13 @@ function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <img 
-              src="/Portfolio/assets/images/profile.jpg" 
-              alt="Mohamed Shiha"
-              className="rounded-lg shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-            />
+            <div className="aspect-w-1 aspect-h-1">
+              <img 
+                src="/Portfolio/assets/images/profile.jpg" 
+                alt="Mohamed Shiha"
+                className="rounded-lg shadow-lg w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </motion.div>
           <motion.div 
             className="flex-1"
@@ -43,9 +45,10 @@ function About() {
             <p className="text-lg mb-6 dark:text-gray-300">
               A passionate Game Developer and Software Engineer with extensive experience in both game and web development. 
               I specialize in creating immersive gaming experiences using Unity and Unreal Engine, having contributed to major titles 
-              like PGA Tour 2K23 and KSP2. My expertise extends to full-stack web development, where I leverage modern technologies 
-              to build scalable applications. I thrive on tackling complex technical challenges and am constantly exploring new 
-              technologies to enhance user experiences.
+              like PGA Tour 2K23 and KSP2, along with several other AAA games under NDA. My expertise extends to full-stack web development, 
+              where I leverage modern technologies to build scalable applications. With a proven track record in both game development studios 
+              and independent projects, I thrive on tackling complex technical challenges and am constantly exploring new technologies to 
+              enhance user experiences.
             </p>
             <div className="flex space-x-4">
               <motion.div 
