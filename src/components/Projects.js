@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGamepad, FaShoppingCart, FaMosque, FaFutbol, FaExternalLinkAlt} from 'react-icons/fa';
+import { FaGamepad, FaShoppingCart, FaMosque, FaFutbol, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useState } from 'react';
 
@@ -41,6 +41,12 @@ const personalProjects = [
     description: "Unity WebGL app for team selection",
     icon: <FaFutbol className="text-2xl text-blue-600" />,
     link: "https://justagamerforfun.itch.io/foosball-team-maker"
+  },
+  {
+    title: "Local Network Video Player",
+    description: "A Flask-based web application for streaming video collections across local networks, featuring a modern interface with subtitle support and keyboard controls",
+    icon: <FaPlay className="text-2xl text-blue-600" />,
+    link: "https://github.com/mohamed-shiha/local-network-video-player"
   }
 ];
 
