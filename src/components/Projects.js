@@ -47,6 +47,12 @@ const personalProjects = [
     description: "A Flask-based web application for streaming video collections across local networks, featuring a modern interface with subtitle support and keyboard controls",
     icon: <FaPlay className="text-2xl text-blue-600" />,
     link: "https://github.com/mohamed-shiha/local-network-video-player"
+  },
+  {
+    title: "2 Players Team Randomizer",
+    description: "A simple web app for randomly assigning players to teams in 2-player games",
+    icon: <FaGamepad className="text-2xl text-blue-600" />,
+    link: "https://github.com/mohamed-shiha/2players-team-randomizer"
   }
 ];
 
